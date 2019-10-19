@@ -1,5 +1,11 @@
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
   font-size: 250%;
+}
+
+.searchbox{
+  width: 100%;
+  text-align: center;
 }

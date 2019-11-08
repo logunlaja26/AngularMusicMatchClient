@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import {FormsModule} from  '@angular/forms';
 import { SongsComponent } from './songs/songs.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    SongsComponent
+    SongsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

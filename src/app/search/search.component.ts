@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -9,7 +10,7 @@ export class SearchComponent implements OnInit {
   title = 'Favorite Lyrics App';
   artist = ''
   song = ''
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -17,6 +18,8 @@ export class SearchComponent implements OnInit {
   handleLogin(){
     console.log(this.artist);
     console.log(this.song);
+    this.router.navigate(['songs',this.artist])
+
   }
 
 }

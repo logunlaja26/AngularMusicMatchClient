@@ -15,11 +15,8 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
-  handleLogin(){
-    console.log(this.artist);
-    console.log(this.song);
-    this.router.navigate(['songs',this.artist])
-
+  gotoSongs(){
+    this.router.navigate(['/songs']);
   }
 
 }
